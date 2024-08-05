@@ -1,0 +1,202 @@
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/inter-v18-cyrillic_greek_latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v18-cyrillic_greek_latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v18-cyrillic_greek_latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/inter-v18-cyrillic_greek_latin-800.woff2") format("woff2");
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1EFE9;
+  color: #6D6D6D;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*::selection {
+  background-color: #64714F;
+  color: #fff;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button,
+a,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.container {
+  width: min(90%, 800px);
+  margin-inline: auto;
+}
+
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+main {
+  padding: 130px 0 80px;
+}
+
+h1 {
+  color: #555555;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.head {
+  margin-bottom: 40px;
+}
+
+.form-container {
+  margin: auto;
+  padding: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+label {
+  flex-basis: 30%;
+  margin-bottom: 5px;
+}
+
+input[type=text], input[type=tel], input[type=number], input[type=date], select, input[type=file] {
+  padding: 8px;
+  min-width: 155px;
+  border: none;
+  border-radius: 4px;
+  color: #6D6D6D;
+}
+
+.form-group-terms {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terms {
+  width: 100%;
+}
+
+.submit-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-button button {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  background-color: #64714F;
+  color: #F1EFE9;
+  border: 1px solid #6D6D6D;
+  border-radius: 0.5rem;
+  padding: 10px 14px;
+  transition: all ease 0.5s;
+}
+.submit-button button:hover {
+  scale: 1.1;
+}
+
+footer {
+  background-color: #64714F;
+  padding: 26px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.white_text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+  color: #F1EFE9;
+  max-width: 200px;
+}

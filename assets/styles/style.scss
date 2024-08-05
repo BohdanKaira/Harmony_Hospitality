@@ -1,0 +1,214 @@
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/inter-v18-cyrillic_greek_latin-300.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v18-cyrillic_greek_latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/inter-v18-cyrillic_greek_latin-500.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/inter-v18-cyrillic_greek_latin-800.woff2') format('woff2'); 
+}
+
+$color-font-grey: #6D6D6D;
+$color-font-dark: #555555;
+$color-green: #64714F;
+$background-color: #F1EFE9;
+
+@mixin fz($px_size) {
+    font-size: ($px_size / 16) * 1rem;
+}
+
+@mixin lh($px_size) {
+    line-height: ($px_size / 16) * 1rem;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: $background-color;
+    color: $color-font-grey;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    @include fz(16);
+    @include lh(20);
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+*::selection {
+    background-color: #64714F;
+    color: #fff
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+button,
+a,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    cursor: pointer
+}
+.container {
+    width: min(90%, 800px);
+    margin-inline: auto
+}
+.page-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh
+}
+
+//  HEADER  //
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+//  #HEADER  //
+
+//  MAIN  //
+main {
+    padding: 130px 0 80px;
+}
+h1 {
+    color: $color-font-dark;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.head {
+    margin-bottom: 40px;
+}
+.form-container {
+    margin: auto;
+    padding: 10px;
+}
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+label {
+    flex-basis: 30%;
+    margin-bottom: 5px;
+}
+input[type="text"], input[type="tel"], input[type="number"], input[type="date"], select, input[type="file"] {
+    padding: 8px;
+    min-width: 155px;
+    border: none;
+    border-radius: 4px;
+    color: $color-font-grey;
+}
+
+.form-group-terms {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+.terms {
+    width: 100%;
+}
+.submit-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        @include fz(16);
+        @include lh(20);
+        background-color: $color-green;
+        color: $background-color;
+        border: 1px solid $color-font-grey;
+        border-radius: 0.5rem;
+        padding: 10px 14px;
+        transition: all ease .5s;
+        &:hover {
+            scale: 1.1;
+        }
+    }
+}
+//  #MAIN  //
+
+// FOOTER //
+footer {
+    background-color: $color-green;
+    padding: 26px 0;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.white_text {
+    @include fz(20);
+    @include lh(28);
+    font-weight: 300;
+    color: $background-color;
+    max-width: 200px;
+}
+// #FOOTER //

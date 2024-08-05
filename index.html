@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./assets/styles/style.min.css">
+</head>
+<body>
+   
+    <header id="header">
+        <div class="container">
+            <div class="nav">
+                <a href="#">
+                    <img src="./assets/images/Logo.svg" alt="Logo">
+                </a>
+                <div class="links">
+                    <a target="_blank" rel="noreffer nofollow" href="">
+                         <img src="./assets/images/Telgram_logo.svg" alt="telegram logo">              
+                    </a>
+                    <a target="_blank" rel="noreffer nofollow" href="">
+                          <img src="./assets/images/Viber_logo.svg" alt="Viber logo">             
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-wrap">
+        <main>
+            <div class="container">
+                <div class="head">
+                    <h1>Hello dear Guest,</h1>
+                    <p>To streamline your arrival and ensure a seamless check-in experience, we invite you to complete our online check-in form before your stay. By doing so, you'll receive detailed check-in instructions and all the information you need for a comfortable start to your visit.</p>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <div class="form-group">
+                            <label for="full-name">Full Name </label>
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="birth-date">Birth Date </label>
+                            <input type="date" id="birth-date" name="birth-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number *</label>
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="e.g. +1 702 123 4567" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="number-of-guests">Number of Guests *</label>
+                            <input type="number" id="number-of-guests" name="number-of-guests" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out-date">Check Out Date *</label>
+                            <input type="date" id="check-out-date" name="check-out-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id-upload">Please upload a valid copy of your ID (Passport or Driving License) *</label>
+                            <input type="file" id="id-upload" name="id-upload" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="photo-upload">Please upload a photo of you holding your ID next to your face *</label>
+                            <input type="file" id="photo-upload" name="photo-upload" required>
+                        </div>
+                        <div class="form-group-terms">
+                            <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
+                            <p class="terms">I agree to <a href="#">terms & conditions</a> and the policies displayed on Airbnb *</p>
+                        </div>
+                        <div class="submit-button">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <p class="white_text">Your Home Away From Home</p>
+                    <a href="#">
+                        <img src="./assets/images/Small_logo.svg" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
